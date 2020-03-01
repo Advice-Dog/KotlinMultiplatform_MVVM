@@ -69,6 +69,7 @@ kotlin {
             implementation "org.kodein.di:kodein-di-core:$kodeinVersion"
             implementation "org.kodein.di:kodein-di-erased:$kodeinVersion"
             implementation "io.ktor:ktor-client-core:$ktor_version"
+            implementation 'co.touchlab:firestore:0.2.5'
         }
 
         androidMain.dependencies {
@@ -109,4 +110,8 @@ task packForXCode {
             include 'SharedCode .framework.dSYM'
         }
     }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-firestore-ktx:21.4.1'
 }

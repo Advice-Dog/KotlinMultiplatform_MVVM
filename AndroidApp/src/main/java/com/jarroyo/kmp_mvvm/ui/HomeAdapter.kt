@@ -19,7 +19,6 @@ class HomeAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         if (position == 0)
             return SKULL
 
-
         return when (collection[position]) {
             is Article -> ARTICLE
             is String -> HEADER
@@ -29,7 +28,7 @@ class HomeAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
-//            SKULL -> SkullHeaderViewHolder.inflate(parent)
+            SKULL -> SkullHeaderViewHolder.inflate(parent)
 //            HEADER -> HeaderViewHolder.inflate(parent)
 //            EVENT -> EventViewHolder.inflate(parent, EventView.DISPLAY_MODE_MIN)
             ARTICLE -> ArticleViewHolder.inflate(parent)
@@ -48,7 +47,7 @@ class HomeAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     fun setElements(list: List<Any>) {
         collection.clear()
-        collection.addAll(list)
+        collection.addAll(listOf(SKULL) + list)
         notifyDataSetChanged()
     }
 

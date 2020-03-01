@@ -1,6 +1,7 @@
 package com.jarroyo.kmp_mvvm
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         viewModel = ViewModelProviders.of(this).get(HackerTrackerViewModel::class.java)
 
         viewModel.getArticles().addObserver {
+            loading_progress.visibility = View.GONE
             adapter.setElements(it)
         }
     }

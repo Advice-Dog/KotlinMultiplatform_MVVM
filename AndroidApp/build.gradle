@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.jarroyo.kmp_mvvm"
+        applicationId "com.shortstack.hackertracker"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -42,6 +42,16 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.1.0'
     implementation("dev.icerock.moko:mvvm:0.4.0")
+
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.firebase:firebase-firestore:21.4.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
 
 
     implementation "com.google.android.material:material:1.2.0-alpha03"
