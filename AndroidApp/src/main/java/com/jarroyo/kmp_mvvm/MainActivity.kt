@@ -12,21 +12,28 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
-    private lateinit var viewModel: HackerTrackerViewModel
 
-    private val adapter = HomeAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        list.adapter = adapter
-        list.layoutManager = LinearLayoutManager(this)
-
-        viewModel = ViewModelProviders.of(this).get(HackerTrackerViewModel::class.java)
-
-        viewModel.getArticles().addObserver {
-            loading_progress.visibility = View.GONE
-            adapter.setElements(it)
+        if(savedInstanceState == null) {
+            supportFragmentManager.beginTransaction().add(R.id.container, HomeFragment(), null).commit()
         }
+
+        nav_view.setNavigationItemSelectedListener {
+            val fragment = when(it.itemId) {
+                R.id.nav_home -> HomeFragment()
+                R.id.nav_schedule -> ScheduleFragment()
+                else -> HomeFragment()
+            }
+
+            supportFragmentManager.beginTransaction().replace(R.id.container, fragment, null).commit()
+
+            drawer_layout.closeDrawers()
+
+            true
+        }
+
     }
 }

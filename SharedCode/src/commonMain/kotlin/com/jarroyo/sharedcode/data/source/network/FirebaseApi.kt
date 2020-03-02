@@ -1,10 +1,10 @@
 package com.jarroyo.sharedcode.data.source.network
 
 import co.touchlab.firebase.firestore.*
+import com.jarroyo.sharedcode.domain.model.hackertracker.*
 //import com.jarroyo.sharedcode.Firestore
-import com.jarroyo.sharedcode.domain.model.hackertracker.Article
-import com.jarroyo.sharedcode.domain.model.hackertracker.Conference
 import dev.icerock.moko.mvvm.livedata.MediatorLiveData
+import io.ktor.util.Hash
 
 class FirebaseApi {
 
@@ -23,7 +23,7 @@ class FirebaseApi {
                 val articles = it.documents_.map {
                     Article(
 //                        it.get("id") as Long,
-                        0L,
+                        0,
                         it.get("name") as String,
                         it.get("text") as String
                     )
@@ -39,15 +39,70 @@ class FirebaseApi {
 
     fun getConferences(): MediatorLiveData<List<Conference>> {
         val result = MediatorLiveData<List<Conference>>(emptyList())
-//
-//        firestore.collection("conferences")
-//            .addSnapshotListener { snapshot, exception ->
-//                snapshot.toObjects()
-//            }
-//
+
+        instance.collection("conferences")
+            .orderBy("start_date")
+            .get_()
+            .addListeners({
+                val conferences = it.documents_.map {
+                    Conference(
+//                        it.get("id") as Long,
+                        0,
+                        it.get("name") as String,
+                        it.get("code") as String
+                    )
+                }
+
+                result.postValue(conferences)
+            }, {
+
+            })
 
 
         return result
+    }
+
+    fun getEvents() : MediatorLiveData<List<Event>> {
+        val result = MediatorLiveData<List<Event>>(emptyList())
+
+        instance.collection("conferences")
+            .document("DEFCON27")
+            .collection("events")
+            .get_()
+            .addListeners({
+                val events = it.documents_.map {
+                    Event(
+//                        it.get("id") as Long,
+                        0,
+                        it.get("conference") as String,
+                        it.get("title") as String,
+                        it.get("description") as String,
+                        type = getType(it.get("type") as HashMap<String, Any>),
+                        location = getLocation(it.get("location") as HashMap<String, Any>)
+                    )
+                }
+
+                result.postValue(events)
+            }, {
+
+            })
+
+        return result
+    }
+
+    private fun getLocation(hashMap: HashMap<String, Any>): Location {
+        return Location(
+            name = hashMap.get("name") as String,
+            hotel = hashMap.get("hotel") as? String?
+        )
+    }
+
+    private fun getType(type: HashMap<String, Any>): Type {
+        return Type(
+            id = -1,
+            name = type.get("name") as String,
+            color = type.get("color") as String
+        )
     }
 
 }

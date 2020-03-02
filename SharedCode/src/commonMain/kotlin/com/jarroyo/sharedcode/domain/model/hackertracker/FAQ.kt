@@ -3,9 +3,8 @@ package com.jarroyo.sharedcode.domain.model.hackertracker
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Article(
+data class FAQ(
         val id: Int = -1,
-        val name: String = "",
-        val text: String = "",
-        val hidden: Boolean = false
-)
+        val conference: String = "",
+        val question: String = "",
+        val answer: String = "")
