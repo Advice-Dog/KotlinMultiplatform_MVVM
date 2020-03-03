@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bc3d243f-8e36-4027-8e01-b2352343dd43" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp.xcodeproj/project.xcworkspace/xcuserdata/chris.porter.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp.xcodeproj/xcuserdata/chris.porter.xcuserdatad/xcschemes/iOSApp.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp.xcodeproj/xcuserdata/chris.porter.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp/Assets.xcassets/Image.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp/Assets.xcassets/skull.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp/Assets.xcassets/skull.imageset/skull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp/Assets.xcassets/skull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp/SkullHeaderTableViewCell.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iOSApp/SkullHeaderTableViewCell.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iOSApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/iOSApp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iOSApp/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/iOSApp/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iOSApp/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/iOSApp/ViewController.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_8E86F874-EA87-4397-AC0E-B754B6410DAC" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YaqNTJMmElLBtToMeLzgfJMu8M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="iOSApp" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iOSApp" TARGET_NAME="iOSApp" CONFIG_NAME="Debug" SCHEME_NAME="iOSApp" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="iOSApp" RUN_TARGET_NAME="iOSApp" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc3d243f-8e36-4027-8e01-b2352343dd43" name="Default Changelist" comment="" />
+      <created>1583191012108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583191012108</updated>
+      <workItem from="1583191013470" duration="4206000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1197" y="-873" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583191004502">
+      <screen x="764" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="1197" y="-873" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.956/764.-1057.1920.1057/-1156.-1057.1920.1057@764.-1057.1920.1057" timestamp="1583191004502" />
+    <state width="1704" height="222" key="GridCell.Tab.0.bottom" timestamp="1583196221060">
+      <screen x="764" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1704" height="222" key="GridCell.Tab.0.bottom/0.23.1680.956/764.-1057.1920.1057/-1156.-1057.1920.1057@764.-1057.1920.1057" timestamp="1583196221060" />
+    <state width="1704" height="222" key="GridCell.Tab.0.center" timestamp="1583196221059">
+      <screen x="764" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1704" height="222" key="GridCell.Tab.0.center/0.23.1680.956/764.-1057.1920.1057/-1156.-1057.1920.1057@764.-1057.1920.1057" timestamp="1583196221059" />
+    <state width="1704" height="222" key="GridCell.Tab.0.left" timestamp="1583196221058">
+      <screen x="764" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1704" height="222" key="GridCell.Tab.0.left/0.23.1680.956/764.-1057.1920.1057/-1156.-1057.1920.1057@764.-1057.1920.1057" timestamp="1583196221058" />
+    <state width="1704" height="222" key="GridCell.Tab.0.right" timestamp="1583196221060">
+      <screen x="764" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1704" height="222" key="GridCell.Tab.0.right/0.23.1680.956/764.-1057.1920.1057/-1156.-1057.1920.1057@764.-1057.1920.1057" timestamp="1583196221060" />
+  </component>
+</project>
